@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+#header-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#main-section {
+  position: relative;
+  z-index: 1;
+  margin-top: 5rem;
+}
+
+h1 {
+  font-weight: 500;
+  color: white;
+  margin: 2rem;
+}
+
+input[type="text"] {
+  width: 35rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  color: hsl(0, 0%, 17%);
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding: 1.5rem;
+}
+
+.fa-chevron-right {
+  position: fixed;
+  right: 42rem;
+  color: white;
+  background-color: hsl(0, 0%, 17%);
+  width: 4rem;
+  height: 3.5rem;
+  line-height: 3.5;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+
+#details {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+  background-color: white;
+  width: 80rem;
+  height: 10rem;
+  border-radius: 15px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+#details div {
+  margin-right: 6rem;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+#first {
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+#second {
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+#line {
+  position: relative;
+  top: 0.5rem;
+  margin-right: 2rem;
+  border-left: 1px solid hsl(0, 2%, 76%);
+  height: 5rem;
+}
+
+#mapid {
+  position: fixed;
+  top: 333px;
+  width: 100%;
+  height: 607px;
+}
+
+#loading {
+  position: absolute;
+  top: 40%;
+  right: 50%;
+}
+
+.dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot1 {
+  background-color: #2a363b;
+  animation: jump-up 0.6s 0.1s linear infinite;
+}
+
+.dot2 {
+  background-color: #e84a5f;
+  animation: jump-up 0.6s 0.2s linear infinite;
+}
+
+.dot3 {
+  background-color: #ff847c;
+  animation: jump-up 0.6s 0.3s linear infinite;
+}
+
+.dot4 {
+  background-color: #fecea8;
+  animation: jump-up 0.6s 0.4s linear infinite;
+}
+
+@keyframes jump-up {
+  50% {
+    transform: translate(0, 15px);
+  }
+}

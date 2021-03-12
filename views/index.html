@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/16662469fc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <link rel="stylesheet" href="../public/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../public/images/favicon-32x32.png">
+  <title>IP Address Tracker</title>
+</head>
+<body>
+<img id="header-img" src="../public/images/pattern-bg.png" alt="">
+<main id="main-section">
+  <h1>IP Address Tracker</h1>
+  <input type="text" placeholder="Type IP number to track">
+  <i class="fas fa-chevron-right"></i>
+  <div id="loading" hidden = "true">
+    <div class="dot dot1"></div>
+    <div class="dot dot2"></div>
+    <div class="dot dot3"></div>
+    <div class="dot dot4"></div>
+  </div>
+  <div id="details">
+    <div id="address">
+      <p id="first">IP Address</p>
+      <p id="second" class="ip"></p>
+    </div>
+    <section id="line"></section>
+    <div id="location">
+      <p id="first">Location</p>
+      <p id="second" class="location"></p>
+    </div>
+    <section id="line"></section>
+    <div id="timezone">
+      <p id="first">Timezone</p>
+      <p id="second" class="time"></p>
+    </div>
+    <section id="line"></section>
+    <div id="second-details">
+      <p id="first">ISP</p>
+      <p id="second" class="isp-class"></p>
+    </div>
+  </div>
+</main> 
+<div id="mapid"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../public/main.js"></script>
+</body>
+</html>
